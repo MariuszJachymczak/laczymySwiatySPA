@@ -6,15 +6,17 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+
 import Header from "./header/Header";
 import MainFeaturedPost from "./main/MainFeaturedPost";
-import Main from "./main/Main";
+import FeaturedPost from "./featuredpost/FeaturedPost";
 import Sidebar from "./sidebar/Sidebar";
 import Footer from "./footer/Footer";
-import FeaturedPost from "./featuredpost/FeaturedPost";
+import Main from "./main/Main";
 import post1 from "./posts/blog-post1.md";
-import post2 from "./posts/blog-post2.md";
-import post3 from "./posts/blog-post3.md";
+import MyComponent from "../test";
+// import post2 from "./posts/blog-post2.md";
+// import post3 from "./posts/blog-post3.md";
 
 const sections = [
   { title: "Technology", url: "#" },
@@ -57,7 +59,7 @@ const featuredPosts = [
   },
 ];
 
-const posts = [post1, post2, post3];
+const posts = [post1];
 
 const sidebar = {
   title: "About",
@@ -100,7 +102,8 @@ export default function Blog() {
             ))}
           </Grid>
           <Grid container spacing={5} sx={{ mt: 3 }}>
-            <Main title="From the firehose" posts={posts} />
+            {/* <Main title="From the firehose" posts={posts} /> */}
+            <MyComponent />
             <Sidebar
               title={sidebar.title}
               description={sidebar.description}
