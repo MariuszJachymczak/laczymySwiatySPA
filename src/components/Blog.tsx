@@ -14,7 +14,7 @@ import Sidebar from "./sidebar/Sidebar";
 import Footer from "./footer/Footer";
 import Main from "./main/Main";
 import post1 from "./posts/blog-post1.md";
-import MyComponent from "../test";
+import MyComponent from "./markdown/test";
 // import post2 from "./posts/blog-post2.md";
 // import post3 from "./posts/blog-post3.md";
 
