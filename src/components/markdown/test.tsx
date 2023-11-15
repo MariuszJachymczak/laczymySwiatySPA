@@ -1,6 +1,6 @@
 import Typography from "@mui/material/Typography";
-import Markdown from "./components/markdown/Markdown";
-import blogPostContent from "../src/components/posts/blog-post1.md";
+import Markdown from "./Markdown";
+import blogPostContent from "../posts/blog-post1.md";
 import { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
@@ -46,7 +46,7 @@ const options = {
   },
 };
 
-export function MyComponent(props: any) {
+export function MarkdownComponent(props: any) {
   const [content, setContent] = useState("");
   useEffect(() => {
     fetch(blogPostContent)
@@ -61,4 +61,4 @@ export function MyComponent(props: any) {
   );
 }
 
-export default MyComponent;
+export default MarkdownComponent;
